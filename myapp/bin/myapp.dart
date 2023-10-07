@@ -11,8 +11,8 @@ void main(List<String> arguments) async{
   int count =0;
   double averprice=0;
   for(var car in carsList.cars){
-    count++;
     if (car.car_color=='Yellow'){
+      count++;
       double price = double.parse(car.price.substring(1));
       averprice=price+averprice;
       averprice=averprice/count;
