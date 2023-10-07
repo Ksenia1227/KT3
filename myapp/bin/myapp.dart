@@ -15,10 +15,10 @@ void main(List<String> arguments) async{
       count++;
       double price = double.parse(car.price.substring(1));
       averprice=price+averprice;
-      averprice=averprice/count;
     }
 
   }
+  averprice=averprice/count;
   print(averprice);
 }
 
